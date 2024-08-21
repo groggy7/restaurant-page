@@ -1,4 +1,6 @@
 import "./style.css";
+import kebablogo from "./assets/kebab.png"
+import photoContainer from "./home";
 
 const navs = document.querySelectorAll("nav");
 const content = document.getElementById("content");
@@ -6,7 +8,29 @@ navs[0].innerText = "Home";
 navs[1].innerText = "Menu";
 navs[2].innerText = "About";
 
-const h1 = document.createElement("h1");
-h1.innerText = "KEBAB RESTAURANT";
+const logo = document.createElement("div");
+logo.className = "logo";
+const logoImg = document.createElement("img");
+logoImg.src = kebablogo;
+logoImg.style.width = "50px";
+const logoText = document.createElement("p");
+logoText.innerText = "KEBAB RESTAURANT";
+logo.appendChild(logoImg);
+logo.appendChild(logoText)
 
-content.appendChild(h1);
+navs[0].parentNode.insertBefore(logo, navs[0]);
+
+content.appendChild(photoContainer);
+
+navs[0].addEventListener("click", () => {
+    content.innerHTML = "";
+    content.appendChild(photoContainer);
+});
+
+navs[1].addEventListener("click", () => {
+    content.innerHTML = "";
+});
+
+navs[2].addEventListener("click", () => {
+    content.innerHTML = "";
+});
