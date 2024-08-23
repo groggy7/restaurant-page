@@ -1,6 +1,7 @@
 import "./style.css";
 import kebablogo from "./assets/kebab.png"
-import photoContainer from "./home";
+import home from "./home";
+import menu from "./menu"
 
 const navs = document.querySelectorAll("nav");
 const content = document.getElementById("content");
@@ -20,15 +21,16 @@ logo.appendChild(logoText)
 
 navs[0].parentNode.insertBefore(logo, navs[0]);
 
-content.appendChild(photoContainer);
+content.appendChild(home);
 
 navs[0].addEventListener("click", () => {
     content.innerHTML = "";
-    content.appendChild(photoContainer);
+    content.appendChild(home);
 });
 
 navs[1].addEventListener("click", () => {
     content.innerHTML = "";
+    content.appendChild(menu);
 });
 
 navs[2].addEventListener("click", () => {
