@@ -1,9 +1,9 @@
 import "./style.css";
 import kebablogo from "./assets/kebab.png";
 
-import home from "./home";
-import menu from "./menu";
-import about from "./about";
+import home from "./home/home.js";
+import menu from "./menu/menu.js";
+import about from "./about/about.js";
 
 const navs = document.querySelectorAll("nav");
 const content = document.getElementById("content");

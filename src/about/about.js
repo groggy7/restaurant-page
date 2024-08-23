@@ -23,5 +23,5 @@ mapFrame.className = "map-frame";
 mapFrame.src = "https://www.google.com/maps?q=Fener+Kalamış+Caddesi,Istanbul,Turkey&output=embed";
 
 mapContainer.appendChild(mapFrame);
-
+    
 export default about;

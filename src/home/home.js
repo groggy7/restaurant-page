@@ -1,5 +1,5 @@
 import "./home.css";
-import { kebabList } from "./menu"
+import { kebabList } from "../menu/menu"
 
 const homepage = document.createElement("div");
 homepage.className = "home-page";
