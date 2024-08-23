@@ -1,7 +1,9 @@
 import "./style.css";
-import kebablogo from "./assets/kebab.png"
+import kebablogo from "./assets/kebab.png";
+
 import home from "./home";
-import menu from "./menu"
+import menu from "./menu";
+import about from "./about";
 
 const navs = document.querySelectorAll("nav");
 const content = document.getElementById("content");
@@ -35,4 +37,5 @@ navs[1].addEventListener("click", () => {
 
 navs[2].addEventListener("click", () => {
     content.innerHTML = "";
+    content.appendChild(about)
 });

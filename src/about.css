@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.map-frame {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+}
